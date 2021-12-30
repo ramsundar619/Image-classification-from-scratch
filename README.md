@@ -10,8 +10,13 @@ This code shows how to do image classification from scratch, starting from JPEG 
 ## Installation
 **Create a conda virtual environment with dependencies and activate it**
 ```
-conda create --name tf_gpu tensorflow-gpu 
-conda activate tf_gpu
+conda create --name tf24
+conda activate tf24
+conda install tensorflow==2.4.1=gpu_py38h8a7d6ce_0
+conda install matplotlib
+conda install numpy==1.19.5
+pip install pydot
+sudo apt install graphviz
 ```
 ## Loading Dataset
 - Download the dataset from [Hot Dog-Not Hot Dog](https://drive.google.com/drive/folders/1wmsqkvEawtW18MHOhobG9QL5flbkjuKB?usp=sharing).
