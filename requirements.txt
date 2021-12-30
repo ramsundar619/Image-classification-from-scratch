@@ -1,2 +1,5 @@
 tensorflow-gpu == 2.4.1
 matplotlib == 3.5.0
+numpy == 1.19.5
+pydot == 1.4.2
+graphviz
