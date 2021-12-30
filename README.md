@@ -8,10 +8,13 @@ This code shows how to do image classification from scratch, starting from JPEG 
 - Getting Started
 - Methodology being used for image classification using Keras and Tensorflow library
 ## Installation
-**Create a conda virtual environment with dependencies and activate it**
+**Create a conda virtual environment and activate it**
 ```
 conda create --name tf24
 conda activate tf24
+```
+**Install Dependencies**
+```
 conda install tensorflow==2.4.1=gpu_py38h8a7d6ce_0
 conda install matplotlib
 conda install numpy==1.19.5
