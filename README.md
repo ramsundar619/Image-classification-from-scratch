@@ -65,11 +65,16 @@ python3 main.py
 - tf.keras.layers.GlobalAveragePooling2D() - Global average pooling operation for spatial data.
 - tf.keras.layers.Dropout() - Applies Dropout to the input.
 - tf.keras.layers.Dense() - regular densely-connected NN layer.
+- tf.keras.activations.sigmoid - Sigmoid activation function, sigmoid(x) = 1 / (1 + exp(-x)).
+- tf.keras.activations.softmax - Softmax converts a vector of values to a probability distribution.
 - tf.keras.Model.compile() - Configures the model for training.
   - Parameters used
   - Optimizer - An optimizer is one of the two arguments required for compiling a Keras model.
   - Loss - The purpose of loss functions is to compute the quantity that a model should seek to minimize during training.
   - metrics - A metric is a function that is used to judge the performance of your model.
+- tf.keras.metrics.Accuracy - Calculates how often predictions equal labels.
+- tf.keras.losses.BinaryCrossentropy - Computes the cross-entropy loss between true labels and predicted labels.
+- tf.keras.optimizers.Adam - Adam optimization is a stochastic gradient descent method that is based on adaptive estimation of first-order and second-order                                    moments.
 - tf.keras.utils.plot_model() - Converts the Keras model to dot format and save to a file.
 - tf.keras.callbacks.ModelCheckpoint() - Callback to save the Keras model or model weights at some frequency.
 - tf.keras.preprocessing.load_img() - Loads an image into PIL format.
