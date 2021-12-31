@@ -47,6 +47,8 @@ python3 main.py
 - tf.keras.Sequential() - Sequential groups a linear stack of layers into a tf.keras.Model.
 - tf.keras.layers.experimental.preprocessing.RandomFlip("horizontal") - A preprocessing layer which randomly flips images horizontally during training.
 - tf.keras.layers.experimental.preprocessing.RandomRotation() - A preprocessing layer which randomly rotates images during training.
+  - parameters used
+  - factor - a float represented as fraction of 2 Pi, or a tuple of size 2 representing lower and upper bound for rotating clockwise and counter-clockwise. A                  positive values means rotating counter clock-wise, while a negative value means clock-wise. When represented as a single float, this value is used                for both the upper and lower bound.
 - tf.Keras.Input() - used to instantiate a Keras tensor.
 - tf.keras.layers.Rescaling() - A preprocessing layer which rescales input values to a new range.
 - tf.keras.layers.Conv2D() - 2D convolution layer (e.g. spatial convolution over images).
