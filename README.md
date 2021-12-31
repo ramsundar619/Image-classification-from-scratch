@@ -87,3 +87,23 @@ python3 test.py
 - tf.keras.preprocessing.load_img() - Loads an image into PIL format.
 - tf.keras.preprocessing.image.img_to_array() - Converts a PIL Image instance to a Numpy array.
 - tf.expand_dims() - Returns a tensor with a length 1 axis inserted at index axis.
+## Input
+Here we are using [Hot Dog-Not Hot Dog](https://drive.google.com/drive/folders/1wmsqkvEawtW18MHOhobG9QL5flbkjuKB?usp=sharing) from Kaggle as an input to the model which predicts a given image as either a hot dog or not a hot dog once trained.
+## Parameters used
+- image_size = (180, 180) - A standard dimension we fix for all images before feeding into the model.
+- batch_size = 16 - batch size for training and testing.
+- validation_split = 0.2 - fraction of data to reserve for validation.
+- seed = 1337 - Optional random seed for shuffling and transformations.
+- buffer_size = 32 - Creates a Dataset that prefetches elements from this dataset.
+- filters - The dimensionality of the output space (i.e. the number of output filters in the convolution).
+- kernel_size - An integer or tuple/list of 2 integers, specifying the height and width of the 2D convolution window.
+- strides - An integer or tuple/list of 2 integers, specifying the strides of the convolution along the height and width. 
+- padding - one of "valid" or "same" (case-insensitive). "valid" means no padding. "same" results in padding with zeros evenly to the left/right or up/down of the input. When padding="same" and strides=1, the output has the same size as the input. 
+- "relu" - Rectified Linear Unit Function which returns element-wise max(x, 0).
+- "sigmoid" - Sigmoid activation function, sigmoid(x) = 1 / (1 + exp(-x)). Returns a value between 0 to 1.
+- "softmax" - Softmax converts a vector of values to a probability distribution.The elements of the output vector are in range (0, 1) and sum to 1.
+- rate = 0.5 - Float between 0 and 1. Fraction of the input units to drop. 
+- num_classes = 2(hot_dog or not_hot_dog)
+- Learning rate = 1e-3 for adam optimizer
+## Ouput
+After training the model for 50 epochs, it shows a training accuracy of 88 percent and a validation accuracy of 78 percent.
