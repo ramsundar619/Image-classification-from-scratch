@@ -24,9 +24,13 @@ sudo apt install graphviz
 ## Loading Dataset
 - Download the dataset from [Hot Dog-Not Hot Dog](https://drive.google.com/drive/folders/1wmsqkvEawtW18MHOhobG9QL5flbkjuKB?usp=sharing).
 ## Getting Started
-For running the code,
+**For Training**
 ```
 python3 main.py
+```
+**For Testing**
+```
+python3 test.py
 ```
 ## Methodology being used for image classification using Keras and Tensorflow library
 - tf.compat.v1.ConfigProto.gpu_options.allow_growth = True (prevents tensorflow from allocating the totality of a gpu memory)
